@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/click_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Click Here!"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="70dp"
+        android:background="@drawable/click_text"
+        android:layout_marginBottom="100dp"
+        android:textSize="29dp"
+        android:textColor="#54C6FA"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+       <TextView
+           android:id="@+id/server_text_id"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:visibility="visible"
+           android:textColor="#FC1403"
+           android:textSize="30dp"
+           android:textStyle="italic"
+           android:text="server not available Click ^"/>
+
+         <VideoView
+             android:visibility="gone"
+            android:id="@+id/video_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </RelativeLayout>
+
+    <!--<WebView
+        android:id="@+id/webView_id"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>-->
+
+</LinearLayout>
